@@ -108,9 +108,9 @@ public class ForkBlur extends RecursiveAction {
 
         BufferedImage blurredImage = blur(image);
 
-        String dstName = "blurred-tulips.png";
+        String dstName = "src/main/resources/blurred-tulips.png";
         File dstFile = new File(dstName);
-        ImageIO.write(blurredImage, "jpg", dstFile);
+        ImageIO.write(blurredImage, "png", dstFile);
 
         System.out.println("Output image: " + dstName);
 
